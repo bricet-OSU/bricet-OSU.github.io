@@ -1,0 +1,33 @@
+/*
+ * You should write your CSS in this file.  Don't forget to add your name and
+ * @oregonstate.edu email address below.
+ *
+ * name: Trever Brice
+ * email: bricet@oregonstate.edu
+ */
+
+header {
+  width: 100%;
+  display: inline-block;
+  background-color: black;
+
+}
+
+.header-image-container {
+  float: left;
+}
+
+.site-title {
+  font-size: 90px;
+  font-family: Roboto Slab;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+div, h2 {
+}
