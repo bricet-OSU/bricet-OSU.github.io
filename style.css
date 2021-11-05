@@ -6,9 +6,14 @@
  * email: bricet@oregonstate.edu
  */
 
+ body {
+   margin: 0px;
+ }
+
+ /*styles the header*/
 header {
   width: 100%;
-  display: inline-block;
+  display: flex;
   background-color: black;
 
 }
@@ -26,8 +31,122 @@ header {
 
 a {
   text-decoration: none;
+  color: orange;
+}
+
+header a {
   color: white;
 }
 
-div, h2 {
+main {
+  display: flex;
+  flex-flow: nowrap row;
+  font-family: Roboto;
+}
+
+
+/*styles the sidebar*/
+aside {
+  display: flex;
+  flex-flow: nowrap column;
+  width: fit-content;
+  height: fit-content;
+  background-color: lightgrey;
+  padding: 10px;
+  margin: 3px;
+}
+
+.filter-input-container {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.filter-input {
+  width: 175px;
+  margin-left: 10px;
+}
+
+#filter-min-price, #filter-max-price {
+  width: 70px;
+}
+
+#filter-condition {
+  width: 190px;
+}
+
+#filter-update-button {
+  height: 40px;
+  background: black;
+  color: white;
+  border: solid;
+  border-color: black;
+  font-size: 18px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+#filter-update-button:hover {
+  color: grey;
+  border-color: grey;
+  background-color: peachpuff;
+}
+
+
+/*styles the item section*/
+section {
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.post {
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 2px;
+  margin: 10px;
+
+}
+
+.post-image-container img {
+  margin: 5px;
+  max-width: 290px;
+  max-height: 250px;
+}
+
+.post-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.post-info-container {
+  margin: 5px;
+}
+
+div a:hover {
+  text-decoration: underline;
+}
+
+#sell-something-button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: orange;
+  color: white;
+  font-size: 35px;
+}
+
+#sell-something-button:hover {
+  width: 70px;
+  height: 70px;
+  bottom: 35px;
+  right: 35px;
+  font-size: 45px;
+  border-radius: 35px;
 }
